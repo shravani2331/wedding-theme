@@ -1,4 +1,4 @@
-import { ArrowDown, Heart } from "lucide-react";
+import { ArrowDown, Heart, MapPin, ArrowUpRight } from "lucide-react";
 import EventSection from "@/components/EventSection";
 import FloatingNav from "@/components/FloatingNav";
 import RevealObserver from "@/components/RevealObserver";
@@ -36,10 +36,17 @@ export default function Home() {
     </section>
     {events.map((event, i) => <EventSection event={event} index={i} key={event.id} />)}
     <section className="finale" id="contact">
-      <div className="finale-ring"><Heart className="finale-heart" fill="currentColor" /></div><p className="kicker">With love, from</p>
-      <h2>Save the dates.<br /><em>Bring your dancing shoes.</em></h2>
-      <p className="family-signoff">The Jadhav &amp; Gaikwad Families</p>
-      <div className="signature">8000 Miles to I Do</div>
+      <div className="finale-content">
+        <div className="finale-ring"><Heart className="finale-heart" fill="currentColor" /></div><p className="kicker">With love, from</p>
+        <h2>Save the dates.<br /><em>Bring your dancing shoes.</em></h2>
+        <div className="venue-block">
+          <span>The celebration awaits at</span><h3>The Amora Estate</h3>
+          <p><MapPin size={16} /> Wagholi</p>
+          <a href="https://share.google/KKWlUa0s0lCCNIY9h" target="_blank" rel="noreferrer">View location <ArrowUpRight size={16} /></a>
+        </div>
+        <p className="family-signoff">The Jadhav &amp; Gaikwad Families</p>
+        <div className="signature">8000 Miles to I Do</div>
+      </div>
     </section>
   </main>;
 }
