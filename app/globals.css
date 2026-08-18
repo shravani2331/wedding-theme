@@ -63,3 +63,8 @@
 /* Keep this last so older invitation rules cannot replace the proposal photo. */
 .hero{background-image:linear-gradient(180deg,#071b252b 0%,transparent 42%,#fff5e3c4 80%,#fff5e3 100%),url("/proposal-hero.png");background-size:cover;background-position:center center;background-repeat:no-repeat;background-color:#d9edf5}
 @media(min-width:700px){.hero{background-size:auto 115%;background-position:center center;background-color:#d9edf5}}
+
+/* Keep the hero title in the open sky, away from the couple. */
+.hero-title{font-size:clamp(3.7rem,15vw,6.1rem);transform:translateY(-3.3rem);margin-bottom:-2.2rem;line-height:.68}
+@media(min-width:700px){.hero-title{font-size:6rem;transform:translateY(-4.5rem);margin-bottom:-3.25rem}.hero-title em{font-size:.31em}}
+@media(max-width:420px){.hero-title{font-size:3.75rem;transform:translateY(-2.3rem);margin-bottom:-1.4rem}}
