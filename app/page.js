@@ -9,6 +9,10 @@ export default function Home() {
     <RevealObserver />
     <FloatingNav />
     <section className="hero">
+      <div className="hero-heading">
+        <p className="kicker">Together with our families</p>
+        <div className="hero-title"><span>8000 Miles</span><em>to</em><span>I Do</span></div>
+      </div>
       <div className="hero-wash hero-wash-one" /><div className="hero-wash hero-wash-two" />
       <div className="toran" aria-hidden="true"><i>●</i><i>❋</i><i>●</i><i>❋</i><i>●</i><i>❋</i><i>●</i></div>
       <div className="hanging-diya diya-left" aria-hidden="true"><span>♢</span></div><div className="hanging-diya diya-right" aria-hidden="true"><span>♢</span></div>
@@ -22,8 +26,6 @@ export default function Home() {
       </div>
       <div className="hero-motif">❋</div>
       <div className="hero-inner" data-reveal>
-        <p className="kicker">Together with our families</p>
-        <div className="hero-title"><span>8000 Miles</span><em>to</em><span>I Do</span></div>
         <p className="hero-copy">One love story · Six celebrations<br />Every mile led us here</p>
         <div className="wedding-date"><span>Save the dates</span><strong>{wedding.dateDisplay}</strong></div>
       </div>
